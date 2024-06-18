@@ -1,3 +1,4 @@
+
 // app.js
 "use strict";
 
@@ -13,7 +14,6 @@ const express = require("express"), // express를 요청
   router = require("./routes/index"), // 라우터를 요청 (@TODO: Lesson 26)
   app = express(); // express 애플리케이션의 인스턴스화
 
-// @TODO: Lesson 26: controllers 파일의 요청 삭제
 
 const methodOverride = require("method-override"); // method-override 미들웨어를 요청
 app.use(
@@ -142,19 +142,38 @@ app.use("/", router); // 라우터를 애플리케이션에 추가
  */
 /** @TODO: Home (Pages) 라우트의 homeRoutes.js로의 이동 */
 
+
 /** @TODO: User 라우트의 userRoutes.js로의 이동 */
+
+/**
+ * Listing 23.2 (p. 335)
+ * app.js로 로그인 라우트를 추가
+ */
+
+
 
 /** @TODO: Subscriber 라우트의 subscriberRoutes.js로의 이동 */
 
+
+
 /** @TODO: Course 라우트의 courseRoutes.js로의 이동 */
+
+
 
 /** @TODO: Train 라우트의 trainRoutes.js로의 이동 */
 
+
+
 /** @TODO: Talk 라우트의 talkRoutes.js로의 이동 */
 
-/** @TODO: Research 라우트의 researchRoutes.js로의 이동 */
+/**
+ * Talks
+ */
+// router.get("/talks", talksController.index, talksController.indexView); // 모든 토크를 위한 라우트 추가
+// router.get("/talk/:id", talksController.show, talksController.showView); // 특정 토크를 위한 라우트 추가
 
-/** @TODO: Research 라우트의 researchRoutes.js로의 이동 */
+
+
 
 /**
  * =====================================================================
